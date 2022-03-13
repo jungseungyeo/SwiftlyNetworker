@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftlyNetworker'
-  s.version          = '0.1.3'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of SwiftlyNetworker.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
