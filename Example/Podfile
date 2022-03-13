@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '15.0'
+
+target 'SwiftlyNetworker_Example' do
+  pod 'SwiftlyNetworker', :path => '../'
+
+  target 'SwiftlyNetworker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
