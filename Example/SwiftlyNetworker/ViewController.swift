@@ -11,8 +11,11 @@ import SwiftlyNetworker
 
 class ViewController: UIViewController {
     
+    private lazy var networkerLogic = SwiftlyNetworker(baseURL: "https://raw.githubusercontent.com/jungseungyeo/")
+    
     private let values: [String] = [
-        "SwiftlyNetworker - Default"
+        "SwiftlyNetworker - Default",
+        "SwiftlyNetworker - Combine"
     ]
     
     lazy var collectionView: UICollectionView = {
@@ -60,7 +63,9 @@ extension ViewController: UICollectionViewDelegateFlowLayout  {
     ) {
         switch indexPath.row {
         case 0:            
-            self.navigationController?.pushViewController(NetworkerDefaultViewController.instance(), animated: true)
+            self.navigationController?.pushViewController(NetworkerDefaultViewController.instance(networkerLogic), animated: true)
+        case 1:
+            self.navigationController?.pushViewController(CombineNetworkerCollectionView.instance(networkerLogic), animated: true)
         default: print()
         }
     }

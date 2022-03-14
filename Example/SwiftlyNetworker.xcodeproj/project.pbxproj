@@ -14,6 +14,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		65261EA4BCF52BD865600B81 /* Pods_SwiftlyNetworker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9197557F33F64D775DB4253E /* Pods_SwiftlyNetworker_Tests.framework */; };
+		982EF48127DF7F6600AF358B /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982EF48027DF7F6500AF358B /* UIImage+.swift */; };
+		982EF48327DF7F9E00AF358B /* SojuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982EF48227DF7F9E00AF358B /* SojuCollectionViewCell.swift */; };
+		982EF48527DF801800AF358B /* SojuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 982EF48427DF801800AF358B /* SojuCollectionViewCell.xib */; };
+		982EF48727DF844800AF358B /* CombineNetworkerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982EF48627DF844800AF358B /* CombineNetworkerCollectionView.swift */; };
 		98DF1E0627DDBC96007D063C /* DefaultCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF1E0527DDBC96007D063C /* DefaultCollectionCell.swift */; };
 		98DF1E0827DDBD38007D063C /* NetworkerDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF1E0727DDBD38007D063C /* NetworkerDefaultViewController.swift */; };
 		98DF1E0B27DDBF75007D063C /* SojuAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF1E0A27DDBF75007D063C /* SojuAPI.swift */; };
@@ -48,6 +52,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9197557F33F64D775DB4253E /* Pods_SwiftlyNetworker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftlyNetworker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982EF48027DF7F6500AF358B /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		982EF48227DF7F9E00AF358B /* SojuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SojuCollectionViewCell.swift; sourceTree = "<group>"; };
+		982EF48427DF801800AF358B /* SojuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SojuCollectionViewCell.xib; sourceTree = "<group>"; };
+		982EF48627DF844800AF358B /* CombineNetworkerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineNetworkerCollectionView.swift; sourceTree = "<group>"; };
 		98DF1E0527DDBC96007D063C /* DefaultCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionCell.swift; sourceTree = "<group>"; };
 		98DF1E0727DDBD38007D063C /* NetworkerDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkerDefaultViewController.swift; sourceTree = "<group>"; };
 		98DF1E0A27DDBF75007D063C /* SojuAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SojuAPI.swift; sourceTree = "<group>"; };
@@ -121,12 +129,13 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftlyNetworker */ = {
 			isa = PBXGroup;
 			children = (
+				982EF48B27DF86AB00AF358B /* Closure */,
+				982EF48A27DF867300AF358B /* Combine */,
+				982EF48927DF864000AF358B /* Extension */,
+				982EF48827DF863100AF358B /* Root */,
 				98DF1E0927DDBF63007D063C /* Networker-Default */,
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				98DF1E0527DDBC96007D063C /* DefaultCollectionCell.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -169,12 +178,47 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		982EF48827DF863100AF358B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				98DF1E0527DDBC96007D063C /* DefaultCollectionCell.swift */,
+				982EF48227DF7F9E00AF358B /* SojuCollectionViewCell.swift */,
+				982EF48427DF801800AF358B /* SojuCollectionViewCell.xib */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		982EF48927DF864000AF358B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				982EF48027DF7F6500AF358B /* UIImage+.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		982EF48A27DF867300AF358B /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				982EF48627DF844800AF358B /* CombineNetworkerCollectionView.swift */,
+			);
+			name = Combine;
+			sourceTree = "<group>";
+		};
+		982EF48B27DF86AB00AF358B /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				98DF1E0727DDBD38007D063C /* NetworkerDefaultViewController.swift */,
+			);
+			name = Closure;
+			sourceTree = "<group>";
+		};
 		98DF1E0927DDBF63007D063C /* Networker-Default */ = {
 			isa = PBXGroup;
 			children = (
 				98DF1E0A27DDBF75007D063C /* SojuAPI.swift */,
 				98DF1E0E27DDC08B007D063C /* SojuModel.swift */,
-				98DF1E0727DDBD38007D063C /* NetworkerDefaultViewController.swift */,
 			);
 			name = "Networker-Default";
 			sourceTree = "<group>";
@@ -269,6 +313,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				982EF48527DF801800AF358B /* SojuCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,11 +397,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				98DF1E0F27DDC08B007D063C /* SojuModel.swift in Sources */,
+				982EF48127DF7F6600AF358B /* UIImage+.swift in Sources */,
 				98DF1E0827DDBD38007D063C /* NetworkerDefaultViewController.swift in Sources */,
+				982EF48727DF844800AF358B /* CombineNetworkerCollectionView.swift in Sources */,
 				98DF1E0627DDBC96007D063C /* DefaultCollectionCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				98DF1E0B27DDBF75007D063C /* SojuAPI.swift in Sources */,
+				982EF48327DF7F9E00AF358B /* SojuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

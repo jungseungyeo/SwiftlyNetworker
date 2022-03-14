@@ -1,5 +1,5 @@
 PODS:
-  - SwiftlyNetworker (0.1.1)
+  - SwiftlyNetworker (0.1.4)
 
 DEPENDENCIES:
   - SwiftlyNetworker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftlyNetworker: d3761b01d332b713f7b4b5ef5dcad477ac11c9bd
+  SwiftlyNetworker: c23c4a9d597ef91329da7aa91d4d763055b12866
 
 PODFILE CHECKSUM: e3522db35fc3454eca35df68d9d6b86edee575f5
 

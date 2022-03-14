@@ -19,7 +19,7 @@ extension SojuAPI: APIable {
     }
     
     var path: String {
-        "/TestJSONfile/main/JSON/Test.jsonasdfsdf"
+        "/TestJSONfile/main/JSON/Test.json"
     }
     
     var method: HttpMethod {
